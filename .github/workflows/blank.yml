@@ -1,13 +1,14 @@
-name: Bienvenida
+name: Say hello
 
-on: 
-  create: 
+on:
+  push:
     branches:
-      -develop
+      - main
+
 jobs:
-  Saludar:
+  hello_world:
     runs-on: ubuntu-18.04
     steps:
-      -name: Saludar
-        run: echo "Hola a todos"
-      
+      - name: Echo the message
+        run: |
+          echo "Hola midu!"
