@@ -1,0 +1,13 @@
+name: Bienvenida
+
+on: 
+  push: 
+    branches:
+      -develop
+jobs:
+  Saludar:
+    runs-on: ubuntu-18.04
+    steps:
+      -name: Saludar
+        run: echo "Hola a todos"
+      
