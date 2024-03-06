@@ -1,7 +1,7 @@
 name: Bienvenida
 
 on: 
-  push: 
+  create: 
     branches:
       -develop
 jobs:
